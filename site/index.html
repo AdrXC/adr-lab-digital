@@ -5,7 +5,59 @@
     <meta charset="UTF-8">:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adr Lab Digital | Adriana Correa</title>
-    <style> .agenda-section {
+    <style>body {
+    background-color: #f0f2f5;
+    margin: 0;
+    padding-bottom: 70px; /* Espaço para a barra de baixo */
+}
+
+.header-app {
+    background-color: #0084ff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    border: none;
+    background: none;
+    text-align: center;
+    color: #666;
+}
+
+.btn-adicionar {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0084ff;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card-agenda {
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+} .agenda-section {
             background: white;
             margin: 20px auto;
             padding: 20px;
@@ -53,7 +105,36 @@
         .botao:hover { background-color: #8e44ad; transform: scale(1.05); }
     </style>
 </head>
-<body>
+<body><div id="app">
+    <header class="header-app">
+        <h1>Adr Agenda Digital</h1>
+        <div class="user-info">AC - Adriana</div>
+    </header>
+
+    <main id="conteudo-principal">
+        <div class="card-agenda">
+            <h2>Próximos Atendimentos</h2>
+            <p>Selecione um paciente ou adicione um novo.</p>
+            </div>
+    </main>
+
+    <nav class="nav-bottom">
+        <button onclick="mudarAba('agenda')" class="nav-item">
+            <span>🗓️</span>
+            <p>Agenda</p>
+        </button>
+        <button onclick="mudarAba('pacientes')" class="nav-item">
+            <span>📋</span>
+            <p>Pacientes</p>
+        </button>
+        <button onclick="mudarAba('perfil')" class="nav-item">
+            <span>👤</span>
+            <p>Perfil</p>
+        </button>
+    </nav>
+</div>
+
+<button class="btn-adicionar">+</button>
 
     <header>
         <p class="logo-texto">ADR LAB DIGITAL</p>
@@ -117,5 +198,6 @@
 </body>
 
 </html>
+
 
 
