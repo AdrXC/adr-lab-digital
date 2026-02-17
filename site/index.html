@@ -5,7 +5,36 @@
     <meta charset="UTF-8">:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adr Lab Digital | Adriana Correa</title>
-    <style>
+    <style> .agenda-section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .tabela-agenda {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .tabela-agenda th, .tabela-agenda td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .livre { background-color: #d4edda; color: #155724; }
+        .ocupado { background-color: #f8d7da; color: #721c24; }
         /* Estilo Renovado: Mais Profissional */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #2d3436; margin: 0; padding: 0; text-align: center; }
         
@@ -45,6 +74,41 @@
 
         <br>
        <a href="https://wa.me/5547996202184" class="botao" target="_blank">Solicitar Orçamento</a>
+        <section class="agenda-section">
+    <h2>🗓️ Simulação de Agenda</h2>
+    <p>Escolha um horário para entrega de trabalhos:</p>
+    
+    <table class="tabela-agenda">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Dentista / Clínica</th>
+                <th>Serviço</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00</td>
+                <td>Dra. Juliana</td>
+                <td>Rodete de Cera</td>
+                <td><span class="status ocupado">Ocupado</span></td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>---</td>
+                <td>---</td>
+                <td><span class="status livre">Disponível</span></td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Dr. Ricardo</td>
+                <td>Placa de Bruxismo</td>
+                <td><span class="status ocupado">Ocupado</span></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
     <footer style="margin-bottom: 40px; color: #95a5a6; font-size: 0.9rem;">
         <p>© 2024 Adr Lab Digital - Desenvolvido com código próprio (ADS)</p>
@@ -53,4 +117,5 @@
 </body>
 
 </html>
+
 
