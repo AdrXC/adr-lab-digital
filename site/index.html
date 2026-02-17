@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">:
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adr Odonto | </title>
+    <meta charset="UTF-8">
+    <title>Adr Lab Digital | Adriana Correa</title>
+    <style>
+        /* Estilo Renovado: Mais Profissional */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #2d3436; margin: 0; padding: 0; text-align: center; }
+        
+        header { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; border-bottom: 5px solid #3498db; }
+        
+        .logo-texto { font-size: 2.5rem; font-weight: bold; letter-spacing: 2px; margin: 0; }
+        .subtitulo { font-style: italic; opacity: 0.9; }
+
+        section { padding: 30px; max-width: 700px; margin: -30px auto 30px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        h2 { color: #2980b9; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        
+        .servicos-lista { text-align: left; display: inline-block; line-height: 1.8; color: #636e72; }
+        
+        .botao { background-color: #3498db; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 25px; font-weight: bold; transition: 0.3s; }
+        .botao:hover { background-color: #2980b9; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="logo-texto">ADR LAB DIGITAL</p>
+        <p class="subtitulo">Tecnologia e Precisão por Adriana Correa</p>
+    </header>
+
+    <section>
+        <h2>Sobre a Especialista</h2>
+        <p>Com 13 anos de experiência em rotina clínica, Adriana Correa une o conhecimento prático da odontologia à inovação da <strong>Análise e Desenvolvimento de Sistemas</strong>.</p>
+        
+        <h2>Especialidades</h2>
+        <ul class="servicos-lista">
+            <li>✅ Confecção de Rodetes de Cera de Alta Precisão</li>
+            <li>✅ Planejamento Digital de Próteses (CAD/CAM)</li>
+            <li>✅ Consultoria Técnica para Consultórios</li>
+            <li>✅ Desenvolvimento de Soluções Digitais para Odontologia</li>
+        </ul>
+
+        <br>
+        <a href="#" class="botao">Solicitar Orçamento</a>
+    </section>
+
+    <footer style="margin-bottom: 40px; color: #95a5a6; font-size: 0.9rem;">
+        <p>© 2024 Adr Lab Digital - Desenvolvido com código próprio (ADS)</p>
+    </footer>
+
+</body>
+</html>
     <style>body {
     background-color: #f0f2f5;
     margin: 0;
@@ -57,136 +103,14 @@
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
-} .agenda-section {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 600px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .tabela-agenda {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        .tabela-agenda th, .tabela-agenda td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-            text-align: center;
-        }
-
-        .status {
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .livre { background-color: #d4edda; color: #155724; }
-        .ocupado { background-color: #f8d7da; color: #721c24; }
-        /* Estilo Renovado: Mais Profissional */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; color: #2d3436; margin: 0; padding: 0; text-align: center; }
-        
-        header { background-color: #2c3e50; color: #ecf0f1; padding: 3rem 1rem; border-bottom: 5px solid #3498db; }
-        
-        .logo-texto { font-size: 2.5rem; font-weight: bold; letter-spacing: 2px; margin: 0; }
-        .subtitulo { font-style: italic; opacity: 0.9; }
-
-        section { padding: 30px; max-width: 700px; margin: -30px auto 30px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        
-        h2 { color: #2980b9; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
-        
-        .servicos-lista { text-align: left; display: inline-block; line-height: 1.8; color: #636e72; }
-        
-        .botao { background-color: #3498db; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 25px; font-weight: bold; transition: 0.3s; }
-        .botao:hover { background-color: #8e44ad; transform: scale(1.05); }
+}
     </style>
 </head>
-<body><div id="app">
-    <header class="header-app">
-        <h1>Adr Agenda Digital</h1>
-        <div class="user-info">AC - Adriana</div>
-    </header>
-
-    <main id="conteudo-principal">
-        <div class="card-agenda">
-            <h2>Próximos Atendimentos</h2>
-            <p>Selecione um paciente ou adicione um novo.</p>
-            </div>
-    </main>
-
-    <nav class="nav-bottom">
-        <button onclick="mudarAba('agenda')" class="nav-item">
-            <span>🗓️</span>
-            <p>Agenda</p>
-        </button>
-        <button onclick="mudarAba('pacientes')" class="nav-item">
-            <span>📋</span>
-            <p>Pacientes</p>
-        </button>
-        <button onclick="mudarAba('perfil')" class="nav-item">
-            <span>👤</span>
-            <p>Perfil</p>
-        </button>
-    </nav>
-</div>
-
-<button class="btn-adicionar">+</button>
-
-    <header>
-       
-    </header>
-
-    <section>
-        
-        </ul>
-
-        <br>
-      
-  
-    
-    <table class="tabela-agenda">
-        <thead>
-            <tr>
-                <th>Horário</th>
-                <th>Dentista / Clínica</th>
-                <th>Serviço</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>09:00</td>
-                <td>Dra. Juliana</td>
-                <td>Rodete de Cera</td>
-                <td><span class="status ocupado">Ocupado</span></td>
-            </tr>
-            <tr>
-                <td>10:30</td>
-                <td>---</td>
-                <td>---</td>
-                <td><span class="status livre">Disponível</span></td>
-            </tr>
-            <tr>
-                <td>14:00</td>
-                <td>Dr. Ricardo</td>
-                <td>Placa de Bruxismo</td>
-                <td><span class="status ocupado">Ocupado</span></td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-    <footer style="margin-bottom: 40px; color: #95a5a6; font-size: 0.9rem;">
-        <p>© 2024 Adr Lab Digital - Desenvolvido com código próprio (ADS)</p>
-    </footer>
-
+<body>
 </body>
 
 </html>
+
 
 
 
